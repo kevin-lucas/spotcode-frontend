@@ -1,0 +1,8 @@
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: $dark;
+}
