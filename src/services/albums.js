@@ -11,6 +11,8 @@ const config = {
 const AlbumsService = {
   index: () =>
     Api.get("/dashboard", config),
+  show: (id) =>
+  Api.get(`/albums/${id}`, config),
 };
 
 export default AlbumsService;
