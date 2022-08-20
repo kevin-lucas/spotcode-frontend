@@ -7,16 +7,30 @@ const PlaySequenceButton = styled(Button)`
   margin-bottom: 30px;
 `
 
-const Musics = () => {
-  return <Fragment>
+const Musics = (props) => {
+  const [songs, setSongs] = useState([]);
+  const [playing, setPlaying] = useState([]);
+
+  useEffect(() => {
+    setSongs(
+      props.songs.map((song, key) => (
+        <Music
+          song={song}
+          playing={playing.id === song.id}
+          setPlaying={setPlaying}
+          key={key}
+        />
+      ))
+    );
+  }, [props.songs, playing]);
+
+return <Fragment>
   <Columns className="is-mobile is-centered">
     <Columns.Column desktop={{ size: 5 }} mobile={{size: 12}} className="has-text-centered">
       <PlaySequenceButton className="is-medium" color='primary' outline>Tocar em aleatoriamente</PlaySequenceButton>
     </Columns.Column>
   </Columns>
-  <Music />
-  <Music />
-  <Music />
+  {songs}
 </Fragment>
 };
 
