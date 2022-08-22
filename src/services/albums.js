@@ -2,9 +2,9 @@ import Api from "./api";
 
 const config = {
     headers:{
-      "client": "PUzLPACTJx1RIxpsh-D7Yg",
-      "access_token": "7CX3T3ToZUl6IOGEVi7GJg",
-      "uid": "diana@ross.com"
+      "client": "M6HWlW56vJPcTz4mCRuZrA",
+      "access_token": "P2yiCOR8byz-2giP0X0Vtw",
+      "uid": "freddie@mercury.com"
     }
   };
 
