@@ -8,10 +8,12 @@ const config = {
   }
 };
 
+const payload = {}
+
 const RecentlyHeardsService = {
 
   create: (album_id) =>
-    Api.post(`/albums/${album_id}/recently_heards`, config),
+    Api.post(`/albums/${album_id}/recently_heards`, payload, config),
 };
 
 export default RecentlyHeardsService;

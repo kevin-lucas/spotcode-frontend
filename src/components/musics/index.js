@@ -31,7 +31,6 @@ const Musics = (props) => {
     if (AudioRef.current !== null) {
       AudioRef.current.pause();
       AudioRef.current.load();
-      console.log("Passou aqui 2")
       if (playing.id) {
         AudioRef.current.play();
         RecentlyHeardsService.create(playing.album_id)
