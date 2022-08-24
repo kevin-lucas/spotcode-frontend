@@ -3,6 +3,7 @@ import { Columns } from "react-bulma-components";
 import CategoriesSerice from "../../services/categories";
 import SearchService from "../../services/search";
 import Categories from "../common/categories";
+import ResultsTabs from "../common/results_tabs";
 import SearchBar from "./search_bar";
 
 const Search = () => {
@@ -31,6 +32,7 @@ const Search = () => {
           <SearchBar fetchSearch={fetchSearch} />
         </Columns.Column>
       </Columns>
+      <ResultsTabs albums={albums} artists={artists} songs={songs} />
       <Categories fetchCategorySearch={fetchCategorySearch} />
     </Fragment>
   );
