@@ -1,11 +1,12 @@
 import Api from "./api";
+import Constants from "../config/constants";
 
 const config = {
-  headers:{
-    "client": "M6HWlW56vJPcTz4mCRuZrA",
-    "access_token": "P2yiCOR8byz-2giP0X0Vtw",
-    "uid": "freddie@mercury.com"
-  }
+  headers: {
+    client: Constants.client,
+    access_token: Constants.accessToken,
+    uid: Constants.uid,
+  },
 };
 
 const payload = {}

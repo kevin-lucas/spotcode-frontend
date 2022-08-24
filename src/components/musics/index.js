@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect, useRef } from "react";
 import { Button, Columns } from "react-bulma-components";
 import styled from "styled-components";
+import Constants from "../../config/constants";
 import RecentlyHeardsService from "../../services/recently_heards";
 import Music from "./music";
 
@@ -77,7 +78,7 @@ const Musics = (props) => {
             {playRandom ? 'Parar de tocar' : 'Tocar em aleatoriamente'}
           </PlaySequenceButton>
           <audio controls ref={AudioRef} onEnded={() => NextSong()} className='is-hidden'>
-            <source src={"http://localhost:3000" + playing.file_url} />
+            <source src={Constants.baseUrl + playing.file_url} />
           </audio>
         </Columns.Column>
       </Columns>

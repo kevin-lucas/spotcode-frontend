@@ -6,6 +6,7 @@ import styled from "styled-components";
 import AlbumsService from "../../services/albums";
 import { useParams } from "react-router-dom";
 import Musics from "../musics";
+import Constants from "../../config/constants";
 
 const DivVSpace = styled.div`
   margin-top: 20px;
@@ -28,7 +29,7 @@ const Albums = () => {
     <Fragment>
       <Columns className="is-centered is-mobile is-centered">
         <Columns.Column desktop={{ size: 3 }} className="has-text-centered">
-          <Image src={"http://localhost:3000" + album.cover_url} />
+          <Image src={Constants.baseUrl + album.cover_url} />
           <DivVSpace>
             <Heading size={5} className="has-text-white">
               {album.title}
