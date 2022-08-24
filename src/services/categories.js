@@ -8,8 +8,9 @@ const config = {
   },
 };
 
-const CategoriesSerice = {
+const CategoriesService = {
   show: (id) => Api.get(`/categories/${id}`, config),
+  index: () => Api.get('/categories', config)
 };
 
-export default CategoriesSerice;
+export default CategoriesService;
