@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Spotcode PWA",
+  "name": "Semana Fullstack Onibitcode 2021.",
+  "description": "Aplicativo de músicas",
   "icons": [
     {
       "src": "favicon.ico",
